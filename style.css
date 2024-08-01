@@ -1,0 +1,59 @@
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: #fafafa;
+		--fg: #333;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #151515;
+		--fg: #ddd;
+	}
+}
+
+/*
+:root is equivalent to html selector btw
+https://developer.mozilla.org/en-US/docs/Web/CSS/:root
+*/
+:root {
+	height: 100%;
+	color-scheme: light dark;
+
+	background-color: var(--bg);
+	color: var(--fg);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;}
+
+
+main {
+	min-height: 100%;
+	width: min(100%, 1000px);
+	padding: 0 1rem;
+	box-sizing: border-box;
+	flex: auto;
+	text-align: justify;
+}
+
+header h1 {
+	color: #695EA2
+}
+
+input, button, select {
+	color: black;
+	background-color: #1AA8E0;
+	border: none;
+	border-radius: 1ex;
+	padding: 1ex;
+}
+
+button {
+	background-color: #B4388D;
+}
